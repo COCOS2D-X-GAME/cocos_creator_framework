@@ -6,6 +6,7 @@ export default class EmptyScene extends cc.Component {
 
     start() {
         let ccloader: any = cc.loader;
+        
         this.label.string = `Current Scene Asset Count ${Object.keys(ccloader._cache).length}`;
     }
 }
